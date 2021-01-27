@@ -1,0 +1,62 @@
+<!------ HTML Document - CSS - Liquid Dripping Background ------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Canvas - CSS - Liquid Dripping Background</title>
+  <!-- Meta Data Tags -->
+    <meta charset="UTF-8"><!-- Unicode Character Encoding -->
+    <meta name="description" content="CSS - Liquid Dripping Background">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Pierson Lippard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive Viewport Background Tag -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head><!-- HTML head end -->
+  <body>
+    <h1 id="title1">Dripping Background <br> CSS3</h1>
+    <canvas id="canvas1"></canvas><!-- Canvas1 end -->
+      <div class="container">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="border"></div>
+          <div class="border"><p>delayed start of 5 seconds</p></div>
+      </div><!-- Div container end -->
+      <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in='SourceGraphic'
+                stdDeviation='10'/>
+                <feColorMatrix in='name' mode='matrix'
+                    values='1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 30 -15' />
+                <feBlend in='SourceGraphic' />
+            </filter>
+        </defs>
+      </svg>
+      
+      <script src="script.js"></script><!-- JavaScript end -->
+    
+  </body><!-- HTML body end -->
+</html>
